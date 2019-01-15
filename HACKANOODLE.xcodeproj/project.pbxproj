@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E0CCF4C21EA38AD005FD4D4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E0CCF4B21EA38AD005FD4D4 /* GoogleService-Info.plist */; };
+		8E0CCF4E21EA3A8B005FD4D4 /* CollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CCF4D21EA3A8B005FD4D4 /* CollectionReference.swift */; };
+		8E0CCF5021EA3BCC005FD4D4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CCF4F21EA3BCC005FD4D4 /* Constants.swift */; };
+		8E0CCF5221EA3C84005FD4D4 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CCF5121EA3C84005FD4D4 /* Patient.swift */; };
+		8E1B260621E9CCBF00647C76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B260521E9CCBF00647C76 /* AppDelegate.swift */; };
+		8E1B260821E9CCBF00647C76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B260721E9CCBF00647C76 /* HomeViewController.swift */; };
+		8E1B260B21E9CCBF00647C76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B260921E9CCBF00647C76 /* Main.storyboard */; };
+		8E1B260D21E9CCC000647C76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B260C21E9CCC000647C76 /* Assets.xcassets */; };
+		8E1B261021E9CCC000647C76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B260E21E9CCC000647C76 /* LaunchScreen.storyboard */; };
+		8EA3ADC821E9DF3C00F2DFE7 /* BrowseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3ADC721E9DF3C00F2DFE7 /* BrowseVC.swift */; };
+		8EA3ADCA21E9DF6300F2DFE7 /* DoctorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3ADC921E9DF6300F2DFE7 /* DoctorCell.swift */; };
+		8EA3ADCC21E9E0C800F2DFE7 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3ADCB21E9E0C800F2DFE7 /* Doctor.swift */; };
+		8EA3ADCF21EA056900F2DFE7 /* DoctorCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3ADCE21EA056900F2DFE7 /* DoctorCollectionCell.swift */; };
+		8EA3ADD121EA05D900F2DFE7 /* MyDoctorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3ADD021EA05D900F2DFE7 /* MyDoctorsVC.swift */; };
+		8EE0000021EA912B00AC5E20 /* Patien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0FFFF21EA912B00AC5E20 /* Patien.swift */; };
+		8EE0000521EA9EC300AC5E20 /* DoctorProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0000421EA9EC300AC5E20 /* DoctorProfileVC.swift */; };
+		8EE0000B21EAB7FC00AC5E20 /* CustomerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0000A21EAB7FC00AC5E20 /* CustomerProfileVC.swift */; };
+		8EE0000E21EABB7500AC5E20 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0000D21EABB7500AC5E20 /* NetworkManager.swift */; };
+		8EE0001721EAD08E00AC5E20 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0001621EAD08E00AC5E20 /* Appointments.swift */; };
+		8EE0001921EAE4DB00AC5E20 /* AppointmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0001821EAE4DB00AC5E20 /* AppointmentModel.swift */; };
+		8EE0001D21EB085600AC5E20 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0001C21EB085600AC5E20 /* splash.png */; };
+		8EE0001F21EB097600AC5E20 /* iPhone X-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EE0001E21EB097600AC5E20 /* iPhone X-3.png */; };
+		8EE0FFEF21EA7D2600AC5E20 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0FFEE21EA7D2600AC5E20 /* Medicine.swift */; };
+		8EE0FFF121EA7D7700AC5E20 /* MedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0FFF021EA7D7700AC5E20 /* MedicineVC.swift */; };
+		8EE0FFF621EA81F200AC5E20 /* PatientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0FFF521EA81F200AC5E20 /* PatientsVC.swift */; };
+		8EE0FFF821EA823100AC5E20 /* PatientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0FFF721EA823100AC5E20 /* PatientsCell.swift */; };
+		8EF8EAC221EA6C5C008F9443 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8EAC121EA6C5C008F9443 /* Appointment.swift */; };
+		C55D56282B4549EDF54C6A08 /* Pods_HACKANOODLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20AD1304A1B1A7793EC35B3 /* Pods_HACKANOODLE.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E0CCF4B21EA38AD005FD4D4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E0CCF4D21EA3A8B005FD4D4 /* CollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionReference.swift; sourceTree = "<group>"; };
+		8E0CCF4F21EA3BCC005FD4D4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E0CCF5121EA3C84005FD4D4 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		8E1B260221E9CCBE00647C76 /* HACKANOODLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HACKANOODLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1B260521E9CCBF00647C76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E1B260721E9CCBF00647C76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8E1B260A21E9CCBF00647C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E1B260C21E9CCC000647C76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E1B260F21E9CCC000647C76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E1B261121E9CCC000647C76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA3ADC721E9DF3C00F2DFE7 /* BrowseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseVC.swift; sourceTree = "<group>"; };
+		8EA3ADC921E9DF6300F2DFE7 /* DoctorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCell.swift; sourceTree = "<group>"; };
+		8EA3ADCB21E9E0C800F2DFE7 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		8EA3ADCE21EA056900F2DFE7 /* DoctorCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorCollectionCell.swift; sourceTree = "<group>"; };
+		8EA3ADD021EA05D900F2DFE7 /* MyDoctorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDoctorsVC.swift; sourceTree = "<group>"; };
+		8EE0000421EA9EC300AC5E20 /* DoctorProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoctorProfileVC.swift; path = ../../../../../../../Documents/DoctorProfileVC.swift; sourceTree = "<group>"; };
+		8EE0000A21EAB7FC00AC5E20 /* CustomerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerProfileVC.swift; sourceTree = "<group>"; };
+		8EE0000D21EABB7500AC5E20 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8EE0001621EAD08E00AC5E20 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
+		8EE0001821EAE4DB00AC5E20 /* AppointmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentModel.swift; sourceTree = "<group>"; };
+		8EE0001C21EB085600AC5E20 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		8EE0001E21EB097600AC5E20 /* iPhone X-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone X-3.png"; sourceTree = "<group>"; };
+		8EE0FFEE21EA7D2600AC5E20 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		8EE0FFF021EA7D7700AC5E20 /* MedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineVC.swift; sourceTree = "<group>"; };
+		8EE0FFF521EA81F200AC5E20 /* PatientsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientsVC.swift; path = ../../../../../../../Documents/PatientsVC.swift; sourceTree = "<group>"; };
+		8EE0FFF721EA823100AC5E20 /* PatientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PatientsCell.swift; path = ../../../../../../../Documents/PatientsCell.swift; sourceTree = "<group>"; };
+		8EE0FFFF21EA912B00AC5E20 /* Patien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Patien.swift; path = ../../../../../../../Documents/Patien.swift; sourceTree = "<group>"; };
+		8EF8EAC121EA6C5C008F9443 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		C3B85AE463CEF3C69BC990A5 /* Pods-HACKANOODLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HACKANOODLE.release.xcconfig"; path = "Pods/Target Support Files/Pods-HACKANOODLE/Pods-HACKANOODLE.release.xcconfig"; sourceTree = "<group>"; };
+		D1BF4489A0264461918A7541 /* Pods-HACKANOODLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HACKANOODLE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HACKANOODLE/Pods-HACKANOODLE.debug.xcconfig"; sourceTree = "<group>"; };
+		F20AD1304A1B1A7793EC35B3 /* Pods_HACKANOODLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HACKANOODLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1B25FF21E9CCBE00647C76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55D56282B4549EDF54C6A08 /* Pods_HACKANOODLE.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B222E8D7F83195EEB17DF4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F20AD1304A1B1A7793EC35B3 /* Pods_HACKANOODLE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E0CCF5321EA3C89005FD4D4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CCF5121EA3C84005FD4D4 /* Patient.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8E0CCF5421EA3C98005FD4D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8E0CCF4D21EA3A8B005FD4D4 /* CollectionReference.swift */,
+				8E0CCF4F21EA3BCC005FD4D4 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8E1B25F921E9CCBE00647C76 = {
+			isa = PBXGroup;
+			children = (
+				8E1B260421E9CCBE00647C76 /* HACKANOODLE */,
+				8E1B260321E9CCBE00647C76 /* Products */,
+				C46E998E9A475CA415AFE10C /* Pods */,
+				5B222E8D7F83195EEB17DF4F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1B260321E9CCBE00647C76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B260221E9CCBE00647C76 /* HACKANOODLE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1B260421E9CCBE00647C76 /* HACKANOODLE */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0000C21EABB4F00AC5E20 /* NetworkManager */,
+				8E0CCF4B21EA38AD005FD4D4 /* GoogleService-Info.plist */,
+				8EE0FFF321EA81CB00AC5E20 /* Doctor */,
+				8EA3ADC521E9DEF000F2DFE7 /* Customer */,
+				8E1B260521E9CCBF00647C76 /* AppDelegate.swift */,
+				8E1B260721E9CCBF00647C76 /* HomeViewController.swift */,
+				8E1B260921E9CCBF00647C76 /* Main.storyboard */,
+				8E1B260C21E9CCC000647C76 /* Assets.xcassets */,
+				8EE0001E21EB097600AC5E20 /* iPhone X-3.png */,
+				8EE0001C21EB085600AC5E20 /* splash.png */,
+				8E1B260E21E9CCC000647C76 /* LaunchScreen.storyboard */,
+				8E1B261121E9CCC000647C76 /* Info.plist */,
+				8E0CCF5421EA3C98005FD4D4 /* Helpers */,
+				8E0CCF5321EA3C89005FD4D4 /* Classes */,
+			);
+			path = HACKANOODLE;
+			sourceTree = "<group>";
+		};
+		8E4788E221EA7C7400770590 /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0FFEE21EA7D2600AC5E20 /* Medicine.swift */,
+				8EE0FFF021EA7D7700AC5E20 /* MedicineVC.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		8EA3ADC521E9DEF000F2DFE7 /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0000621EAB27200AC5E20 /* Profile */,
+				8E4788E221EA7C7400770590 /* Medicine */,
+				8EA3ADC621E9DF0200F2DFE7 /* Home */,
+				8EA3ADCD21EA051C00F2DFE7 /* MyDoctors */,
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		8EA3ADC621E9DF0200F2DFE7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8EA3ADC721E9DF3C00F2DFE7 /* BrowseVC.swift */,
+				8EA3ADC921E9DF6300F2DFE7 /* DoctorCell.swift */,
+				8EA3ADCB21E9E0C800F2DFE7 /* Doctor.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8EA3ADCD21EA051C00F2DFE7 /* MyDoctors */ = {
+			isa = PBXGroup;
+			children = (
+				8EA3ADCE21EA056900F2DFE7 /* DoctorCollectionCell.swift */,
+				8EA3ADD021EA05D900F2DFE7 /* MyDoctorsVC.swift */,
+				8EF8EAC121EA6C5C008F9443 /* Appointment.swift */,
+			);
+			path = MyDoctors;
+			sourceTree = "<group>";
+		};
+		8EE0000121EA9E5C00AC5E20 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0000421EA9EC300AC5E20 /* DoctorProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8EE0000621EAB27200AC5E20 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0000A21EAB7FC00AC5E20 /* CustomerProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8EE0000C21EABB4F00AC5E20 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0000D21EABB7500AC5E20 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		8EE0001321EACF8700AC5E20 /* Appointments */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0001621EAD08E00AC5E20 /* Appointments.swift */,
+				8EE0001821EAE4DB00AC5E20 /* AppointmentModel.swift */,
+			);
+			path = Appointments;
+			sourceTree = "<group>";
+		};
+		8EE0FFF321EA81CB00AC5E20 /* Doctor */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0001321EACF8700AC5E20 /* Appointments */,
+				8EE0000121EA9E5C00AC5E20 /* Profile */,
+				8EE0FFF421EA81D700AC5E20 /* Patients */,
+			);
+			path = Doctor;
+			sourceTree = "<group>";
+		};
+		8EE0FFF421EA81D700AC5E20 /* Patients */ = {
+			isa = PBXGroup;
+			children = (
+				8EE0FFF521EA81F200AC5E20 /* PatientsVC.swift */,
+				8EE0FFF721EA823100AC5E20 /* PatientsCell.swift */,
+				8EE0FFFF21EA912B00AC5E20 /* Patien.swift */,
+			);
+			path = Patients;
+			sourceTree = "<group>";
+		};
+		C46E998E9A475CA415AFE10C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1BF4489A0264461918A7541 /* Pods-HACKANOODLE.debug.xcconfig */,
+				C3B85AE463CEF3C69BC990A5 /* Pods-HACKANOODLE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E1B260121E9CCBE00647C76 /* HACKANOODLE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1B261421E9CCC000647C76 /* Build configuration list for PBXNativeTarget "HACKANOODLE" */;
+			buildPhases = (
+				63A3220EAA3359DF47757C10 /* [CP] Check Pods Manifest.lock */,
+				8E1B25FE21E9CCBE00647C76 /* Sources */,
+				8E1B25FF21E9CCBE00647C76 /* Frameworks */,
+				8E1B260021E9CCBE00647C76 /* Resources */,
+				E2A4A013B76CC36C5A1A239B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HACKANOODLE;
+			productName = HACKANOODLE;
+			productReference = 8E1B260221E9CCBE00647C76 /* HACKANOODLE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1B25FA21E9CCBE00647C76 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Srijan Garg";
+				TargetAttributes = {
+					8E1B260121E9CCBE00647C76 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E1B25FD21E9CCBE00647C76 /* Build configuration list for PBXProject "HACKANOODLE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E1B25F921E9CCBE00647C76;
+			productRefGroup = 8E1B260321E9CCBE00647C76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E1B260121E9CCBE00647C76 /* HACKANOODLE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E1B260021E9CCBE00647C76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1B261021E9CCC000647C76 /* LaunchScreen.storyboard in Resources */,
+				8E1B260D21E9CCC000647C76 /* Assets.xcassets in Resources */,
+				8E1B260B21E9CCBF00647C76 /* Main.storyboard in Resources */,
+				8E0CCF4C21EA38AD005FD4D4 /* GoogleService-Info.plist in Resources */,
+				8EE0001F21EB097600AC5E20 /* iPhone X-3.png in Resources */,
+				8EE0001D21EB085600AC5E20 /* splash.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63A3220EAA3359DF47757C10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HACKANOODLE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A4A013B76CC36C5A1A239B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HACKANOODLE/Pods-HACKANOODLE-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HACKANOODLE/Pods-HACKANOODLE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1B25FE21E9CCBE00647C76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0000E21EABB7500AC5E20 /* NetworkManager.swift in Sources */,
+				8EE0FFF621EA81F200AC5E20 /* PatientsVC.swift in Sources */,
+				8E1B260821E9CCBF00647C76 /* HomeViewController.swift in Sources */,
+				8EA3ADCC21E9E0C800F2DFE7 /* Doctor.swift in Sources */,
+				8EF8EAC221EA6C5C008F9443 /* Appointment.swift in Sources */,
+				8EA3ADC821E9DF3C00F2DFE7 /* BrowseVC.swift in Sources */,
+				8EA3ADD121EA05D900F2DFE7 /* MyDoctorsVC.swift in Sources */,
+				8EE0001721EAD08E00AC5E20 /* Appointments.swift in Sources */,
+				8EE0FFF121EA7D7700AC5E20 /* MedicineVC.swift in Sources */,
+				8EE0000521EA9EC300AC5E20 /* DoctorProfileVC.swift in Sources */,
+				8EA3ADCA21E9DF6300F2DFE7 /* DoctorCell.swift in Sources */,
+				8EE0000021EA912B00AC5E20 /* Patien.swift in Sources */,
+				8EE0001921EAE4DB00AC5E20 /* AppointmentModel.swift in Sources */,
+				8EA3ADCF21EA056900F2DFE7 /* DoctorCollectionCell.swift in Sources */,
+				8EE0FFEF21EA7D2600AC5E20 /* Medicine.swift in Sources */,
+				8E1B260621E9CCBF00647C76 /* AppDelegate.swift in Sources */,
+				8E0CCF4E21EA3A8B005FD4D4 /* CollectionReference.swift in Sources */,
+				8E0CCF5021EA3BCC005FD4D4 /* Constants.swift in Sources */,
+				8E0CCF5221EA3C84005FD4D4 /* Patient.swift in Sources */,
+				8EE0000B21EAB7FC00AC5E20 /* CustomerProfileVC.swift in Sources */,
+				8EE0FFF821EA823100AC5E20 /* PatientsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E1B260921E9CCBF00647C76 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1B260A21E9CCBF00647C76 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E1B260E21E9CCC000647C76 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1B260F21E9CCC000647C76 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E1B261221E9CCC000647C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E1B261321E9CCC000647C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E1B261521E9CCC000647C76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1BF4489A0264461918A7541 /* Pods-HACKANOODLE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74CY6U8DAQ;
+				INFOPLIST_FILE = HACKANOODLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgarg.HACKANOODLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E1B261621E9CCC000647C76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B85AE463CEF3C69BC990A5 /* Pods-HACKANOODLE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74CY6U8DAQ;
+				INFOPLIST_FILE = HACKANOODLE/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgarg.HACKANOODLE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1B25FD21E9CCBE00647C76 /* Build configuration list for PBXProject "HACKANOODLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1B261221E9CCC000647C76 /* Debug */,
+				8E1B261321E9CCC000647C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1B261421E9CCC000647C76 /* Build configuration list for PBXNativeTarget "HACKANOODLE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1B261521E9CCC000647C76 /* Debug */,
+				8E1B261621E9CCC000647C76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1B25FA21E9CCBE00647C76 /* Project object */;
+}
